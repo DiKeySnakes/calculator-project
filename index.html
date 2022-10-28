@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/63a987d3b1.js"
+      crossorigin="anonymous"></script>
+    <script src="calculator.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="header">
+        <h3 class="text-center">Plain Javascript Calculator</h3>
+      </div>
+      <div
+        class="container calculator-area mx-auto justify-content-center border border-primary">
+        <div class="row">
+          <div
+            data-previous-operand
+            type="text"
+            class="border border-primary form-control-sm text-end previous-operand shadow"
+            disabled></div>
+        </div>
+        <div class="row">
+          <div
+            data-current-operand
+            type="text"
+            class="border border-primary form-control-lg col text-end current-operand shadow"
+            disabled>
+            0
+          </div>
+        </div>
+        <div class="row">
+          <button
+            data-delete
+            type="button"
+            class="btn btn-outline-danger delete col shadow"
+            value="delete">
+            DELETE
+          </button>
+          <button
+            data-all-clear
+            type="button"
+            class="btn btn-outline-danger reset col shadow"
+            value="reset">
+            RESET
+          </button>
+        </div>
+        <div class="row">
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value="7">
+            7
+          </button>
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value="8">
+            8
+          </button>
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value="9">
+            9
+          </button>
+          <button
+            data-operation
+            type="button"
+            class="btn btn-outline-primary col shadow"
+            value="/">
+            /
+          </button>
+        </div>
+        <div class="row">
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value="4">
+            4
+          </button>
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value="5">
+            5
+          </button>
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value="6">
+            6
+          </button>
+          <button
+            data-operation
+            type="button"
+            class="btn btn-outline-primary col shadow"
+            value="*">
+            *
+          </button>
+        </div>
+        <div class="row">
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value="1">
+            1
+          </button>
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value="2">
+            2
+          </button>
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value="3">
+            3
+          </button>
+          <button
+            data-operation
+            type="button"
+            class="btn btn-outline-primary col shadow"
+            value="-">
+            -
+          </button>
+        </div>
+        <div class="row">
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value=".">
+            .
+          </button>
+          <button
+            data-number
+            type="button"
+            class="btn btn-outline-secondary col shadow"
+            value="0">
+            0
+          </button>
+          <button
+            data-equals
+            type="button"
+            class="btn btn-outline-success col shadow"
+            value="=">
+            =
+          </button>
+          <button
+            data-operation
+            type="button"
+            class="btn btn-outline-primary col shadow"
+            value="+">
+            +
+          </button>
+        </div>
+        <div class="row"></div>
+      </div>
+      <div id="footer" class="container">
+        <footer>
+          <p>
+            Created by DiKeySnakes for
+            <a href="https://theodinproject.com/" target="_blank"
+              >The Odin Project</a
+            >
+            curriculum
+          </p>
+          <p>
+            Copyright &copy; DiKeySnakes 2022
+            <a
+              href="https://github.com/DiKeySnakes/calculator-project"
+              target="_blank"
+              ><i id="icon" class="fa-brands fa-github"></i
+            ></a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

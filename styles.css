@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #232526;
+  background: -webkit-linear-gradient(to right, #414345, #232526);
+  background: linear-gradient(to right, #414345, #232526);
+}
+
+h3 {
+  margin: 5rem 0;
+  font-size: 2rem;
+  color: #c7c7c7;
+  text-shadow: 0 0 0.3rem black;
+}
+
+.current-operand {
+  background-color: #c7c7c7;
+  font-size: 2rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.calculator-area {
+  width: 22rem;
+  margin: 0.6rem;
+  padding: 0.6rem;
+  background-color: #a6a0a0;
+  border-radius: 8px;
+  max-height: 100vh;
+}
+
+.previous-operand {
+  background-color: #c7c7c7;
+  font-size: 1.6rem;
+  margin-top: 0.3rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.row {
+  margin: 0.15rem;
+  padding: 0.15rem;
+}
+
+.btn {
+  margin: 0 0.25rem;
+  font-size: xx-large;
+}
+
+.delete,
+.reset {
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.btn-outline-primary,
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-danger {
+  background: #c7c7c7;
+}
+
+#footer {
+  font-size: 1.2rem;
+  padding-top: 7rem;
+  text-align: center;
+  color: #c7c7c7;
+  text-shadow: 0 0 0.3rem black;
+}
+
+a {
+  text-decoration: none;
+  color: #c7c7c7;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #c7c7c7;
+}
+
+#icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+#icon:hover {
+  transform: rotate(360deg) scale(1.2);
+}
